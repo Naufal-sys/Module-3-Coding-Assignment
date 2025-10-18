@@ -1,0 +1,212 @@
+/* style.css */
+
+/* Atur tampilan umum */
+body {
+  font-family: 'Helvetica', sans-serif;
+  background-color: #fdfdfd;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar - tidak fixed, scroll away dengan halaman */
+.navbar {
+  background-color: #f8f8f8;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 0;
+}
+
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.6em;
+  color: #333 !important;
+}
+
+/* Mobile dropdown menu - mengambil lebar penuh browser */
+#mobile-menu {
+  background-color: #ddd;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#mobile-menu ul {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#mobile-menu li {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#mobile-menu a {
+  color: #333 !important;
+  padding: 15px;
+  border-bottom: 1px solid #bbb;
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#mobile-menu a:hover {
+  background-color: #ccc;
+}
+
+/* Heading */
+h2 {
+  margin-top: 30px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+/* Main section - tinggi untuk memungkinkan scroll */
+.main-section {
+  background-color: #e8e8e8;
+  height: 1000px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+/* Optional sections styling - Card Design */
+.menu-section {
+  background-color: #ffffff;
+  margin: 15px;
+  padding: 25px;
+  height: auto;
+  min-height: 300px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.menu-section:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.menu-section h3 {
+  margin-top: 0;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #333;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #f0f0f0;
+}
+
+.menu-section p {
+  font-size: 14px;
+  line-height: 1.7em;
+  margin-bottom: 18px;
+  color: #555;
+  text-align: justify;
+}
+
+.menu-section a {
+  display: block;
+  margin-top: 25px;
+  text-align: center;
+  color: #007BFF;
+  text-decoration: none;
+  font-weight: 500;
+  padding: 8px 16px;
+  background-color: #f8f9fa;
+  border-radius: 4px;
+  transition: all 0.3s ease;
+}
+
+.menu-section a:hover {
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+}
+
+/* Card Labels */
+.card-label {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 8px 15px;
+  font-size: 12px;
+  font-weight: bold;
+  color: white;
+  border-radius: 0 8px 0 8px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.chicken-label {
+  background: linear-gradient(135deg, #ff6b6b, #ff8e8e);
+}
+
+.beef-label {
+  background: linear-gradient(135deg, #8e44ad, #9b59b6);
+}
+
+.sushi-label {
+  background: linear-gradient(135deg, #f39c12, #f1c40f);
+}
+
+/* Individual card styling */
+#chicken {
+  border-left: 4px solid #ff6b6b;
+}
+
+#chicken h3 {
+  color: #ff6b6b;
+}
+
+#beef {
+  border-left: 4px solid #8e44ad;
+}
+
+#beef h3 {
+  color: #8e44ad;
+}
+
+#sushi {
+  border-left: 4px solid #f39c12;
+}
+
+#sushi h3 {
+  color: #f39c12;
+}
+
+/* Better typography */
+.menu-section p:first-of-type {
+  margin-top: 0;
+}
+
+.menu-section p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+  .menu-section {
+    margin: 10px 5px;
+    height: auto;
+    min-height: 250px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .menu-section {
+    margin: 10px 5px;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 992px) {
+  .menu-section {
+    margin: 10px 5px;
+    padding: 25px;
+  }
+}
